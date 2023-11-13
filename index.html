@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="import" href="sidebar.html">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <span class="material-symbols-outlined">stress_management</span>
+                    <h2><span class="danger">Assetify</span></h2>
+                </div>
+                <div class="close">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-symbols-outlined">add_box</span>
+                    <h3>Add Assets</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <h3>Update Assets</h3>
+                </a>
+                <a href="addEmployee.html">
+                    <span class="material-symbols-outlined">add_box</span>
+                    <h3>Add Employee</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">update</span>
+                    <h3>Update Employee</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">analytics</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Setting</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>logout</h3>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <h1>Dashboard</h1>
+            <div class="insights">
+                <div class="asset">
+                    <span class="material-symbols-outlined">web_asset</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Assets</h3>
+                            <h1>45</h1>
+                        </div>
+                        <div class="process">
+                            <svg>
+                                <circle r="30" cy="40" cx="40"></circle>
+                            </svg>
+                            <!-- <div class="number">80%</div> -->
+                        </div>
+                    </div>
+                    <small>Last 30 Days</small>
+                </div>
+
+                <div class="employee">
+                    <span class="material-symbols-outlined">web_asset</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Employee</h3>
+                            <h1>45</h1>
+                        </div>
+                        <div class="process">
+                            <svg>
+                                <circle r="30" cy="40" cx="40"></circle>
+                            </svg>
+                            <!-- <div class="number">80%</div> -->
+                        </div>
+                    </div>
+                    <small>Last 30 Days</small>
+                </div>
+
+                <div class="cost">
+                    <span class="material-symbols-outlined">web_asset</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>45000</h1>
+                        </div>
+                        <div class="process">
+                            <svg>
+                                <circle r="30" cy="40" cx="40"></circle>
+                            </svg>
+                            <!-- <div class="number">80%</div> -->
+                        </div>
+                    </div>
+                    <small>Last 24Hours</small>
+                </div>
+            </div>
+
+            <div class="recentAct">
+                <h1>Recent Activity</h1>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payments</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laptop</td>
+                            <td>123</td>
+                            <td>not alloted</td>
+                            <td class="warning">Not Alloted</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Laptop</td>
+                            <td>123</td>
+                            <td>not alloted</td>
+                            <td class="warning">Not Alloted</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Laptop</td>
+                            <td>123</td>
+                            <td>not alloted</td>
+                            <td class="warning">Not Alloted</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <!-- <div class="right">
+            <h1>Right</h1>
+        </div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
