@@ -48,7 +48,7 @@ body{
     display: grid;
     width: 100%;
     gap: 1.8rem;
-    grid-template-columns: 17rem auto 14rem;
+    grid-template-columns: 17rem auto 17rem;
     margin: 0 auto;
 }
 a{
@@ -72,6 +72,9 @@ h5{
 }
 small{
     font-size: o.75rem;
+}
+.DB{
+    font-size: 50px;
 }
 .profile-photo{
     width: 2.8rem;
@@ -238,6 +241,7 @@ main .insights>div .middle h1{
 
 main h1{
     color: var(--clr-dark);
+    padding-bottom: 1.2rem;
 }
 
 main .insights h3{
@@ -281,4 +285,202 @@ main .recentAct table{
 
 main .recentAct table:hover{
     box-shadow: none;
+}
+
+main table tbody tr{
+    height: 3.2rem;
+    border-bottom: 1px solid #8b1010;
+    color: var(--clr-dark-variant);
+}
+main table tbody td{
+    height: 3.2rem;
+    border-bottom: 1px solid var(--clr-dark);
+}
+main table tbody tr:last-child{
+    border: none;
+}
+main .recentAct a{
+    text-align: center;
+    display: block;
+}
+
+.right{
+    margin-top: 1.4rem;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center; 
+    overflow: auto;  
+}
+.right h2{
+    margin-bottom: 1.3rem;
+}
+.pie-chart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(
+        rgb(115, 176, 216) 0% 33%,
+        rgb(29, 107, 159) 33% 66%,
+        rgb(3, 54, 88) 66% 100%   
+    );
+  }
+
+  .legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .legend div {
+    display: flex;
+    align-items: center;
+  }
+
+  .legend div span {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 3px;
+  }
+
+  .legend .perfect span {
+    background-color: skyblue;
+  }
+
+  .legend .damage span {
+    background-color: rgb(29, 107, 159);
+  }
+
+  .legend .lost span {
+    background-color: rgb(3, 54, 88)l;
+  }
+
+
+  .right h2{
+    color: var(--clr-dark);
+  }
+
+  .right .top{
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+  }
+
+  .right .top button{
+    display: none;
+  }
+  .right .material-symbols-outlined{
+    color: #11101D;
+  }
+  .right .theme-toggler {
+    background-color: #fff;
+    width: 4.2rem;
+    height: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: var(---border-radius-1);
+  }
+
+  .right .theme-toggler span{
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right .theme-toggler span.active{
+    background-color: var(--clr-primary);
+    color: #fff;
+    border-radius: var(---border-radius-1);
+  }
+
+
+
+  @media screen and (max-width:1200px) {
+    .container{
+        width: 100%;
+        grid-template-columns: 5rem auto 17rem; }
+    
+    aside .sidebar h3{
+        display: none;
+    }
+    aside .sidebar a:last-child{
+    position: relative;
+    margin-top: 1.8rem;
+    }
+    aside{
+        height: 100%;
+    }
+    aside .sidebar{
+        height: 100%;
+        position: fixed;
+    }
+    main .insights{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    }
+    .sidebar a {
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+    }
+    
+    .material-symbols-outlined {
+        font-size: 24px;
+        margin-right: 8px;
+    }
+    /* .sidebar a:hover::before {
+        content: attr(title);
+        position: absolute;
+        top: -30px;
+        left: 70%;
+        transform: translateX(-50%);
+        background-color: transparent;
+        color: #fff;
+        padding: 8px;
+        border-radius: 4px;
+        z-index: 1;
+        white-space: nowrap;
+        display: block;
+    } 
+    .sidebar a title:hover {
+        display: none;
+    } */
+     
+}
+@media screen and (max-width: 768px) {
+    .container{
+    width: 100%;
+    grid-template-columns:repeat(1,1fr);
+}
+    
+    aside{
+    
+    position: fixed;
+    left: 0;
+    width: 10rem;
+    z-index: 3;
+    background: red;
+    }
+    aside .logo h2 {
+        display: inline;
+    }
+    aside .sidebar h3{
+        display: inline;
+    }
+
+    aside .sidebar a{
+        width: 100%;
+        height: 3.4rem;
+    }
+    aside .top div.close span{
+        display: inline;
+        position: absolute;
+        right: 0;
+    }
 }
