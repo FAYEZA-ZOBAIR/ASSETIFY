@@ -126,9 +126,9 @@ aside .logo{
     gap: 1rem;
 }
 
-aside .top div.close{
+/* aside .top div.close{
     display: none;
-}
+} */
 
 /* sidebar */
 
@@ -401,7 +401,7 @@ main .recentAct a{
 
 
 
-  @media screen and (max-width:1200px) {
+  @media screen and (max-width:1200px ) {
     .container{
         width: 100%;
         grid-template-columns: 5rem auto 17rem; }
@@ -453,19 +453,26 @@ main .recentAct a{
     } */
      
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     .container{
-    width: 100%;
-    grid-template-columns:repeat(1,1fr);
+        width: 100%;
+        grid-template-columns:repeat(1,1fr);
 }
-    
+    aside .top{
+        position: fixed;
+        left: 0;
+    }
     aside{
-    
-    position: fixed;
-    left: 0;
-    width: 10rem;
-    z-index: 3;
-    background: red;
+        position: fixed;
+        width: 10rem;
+        z-index: 3;
+        background: red;
+    }
+    aside .sidebar{
+        
+        left: 0;
+        bottom: 0;
+        top: 7%;
     }
     aside .logo h2 {
         display: inline;
@@ -478,9 +485,12 @@ main .recentAct a{
         width: 100%;
         height: 3.4rem;
     }
-    aside .top div.close span{
+
+    aside .top div.close{
         display: inline;
         position: absolute;
         right: 0;
+        margin-right: -60px;
+        font-size: 30px;
     }
 }
